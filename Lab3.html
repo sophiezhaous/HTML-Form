@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="Lab3.css">
+<script src="Lab3.js"></script>
+<h1>Netflix Movies</h1>
+<h2><img src="netflix.png" align="right"></h2>
+<form  class="form" action="form.php" method = "post" autocomplete="on">
+  Full name:<input type="text" name="name" required><br>
+  Zip Code: <input type="text" name="zip" required><br>
+  E-mail: <input type="email" name="email" required><br>
+  Date Of Survey: <input type="text" class= "form" name="date"><br>
+   <form action="" required>
+  <input type="radio" name="time" value="value8" onClick= showList()> List View<br>
+  <input type="radio" name="time" value="value9" onClick= showDropDown()> Drop Down Menu<br>
+
+  Preferred Genre<select name="select1"  id = "select1" size="5" onchange= "doSomething()" required>
+
+  <option value="animation">Animation</option> 
+  <option value="action">Action</option>
+  <option value="comedy">Comedy</option>
+  <option value="fantasy">Sci-Fi/ Fantasy</option>
+  <option value="sports">Sports</option>
+
+</select>
+<div>
+Movies<select name="select"  id = "select2" size="4" required>
+
+  <option value="valueA">Mulan</option> 
+  <option value="valueB">Chicken Little</option>
+  <option value="valueC">Lilo and Stitch</option>
+  <option value="valueD">Spongbob Square Pants</option>
+</select>
+</div>
+
+<div>
+<p>Please add any additional comments. </p>
+<textarea rows="20" cols="40"> 
+</textarea>
+</div>
+  <input type="submit">
+</form>
+</body>
+</html>
